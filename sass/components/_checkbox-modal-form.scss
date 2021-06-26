@@ -1,0 +1,28 @@
+.modal-form-checkbox-policy {
+    font-style: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--main-text-color);
+  }
+
+  .modal-form-checkbox-policy::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+  
+    width: 16px;
+    height: 15px;
+    border: 1px solid #212121;
+  
+    margin-right: 7px;
+  }
+  
+  .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
+    background-image: url(/images/icon-check.svg);
+    background-position: center;
+  }
+  
+  .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
+    outline: none;
+    border-color: var(--special-text-color);
+  }

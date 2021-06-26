@@ -1,0 +1,41 @@
+.client__list {
+    display: flex;
+    margin-top: 50px;
+  }
+  
+  .client__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+  
+  .client__card {
+    width: 106px;
+    height: 60px;
+    fill: var(--card-social-color);
+  }
+  
+  .client__item,
+  .client__card {
+    transition: border-color 250ms linear, fill 250ms linear;
+  }
+  
+  .client__item:hover,
+  .client__item:focus {
+    border-color: var(--special-text-color);
+    cursor: pointer;
+  }
+  
+  .client__item:hover .client__card,
+  .client__item:focus .client__card {
+    fill: var(--special-text-color);
+  }
+  
+  .client__list .client__item + .client__item {
+    margin-left: 30px;
+  }

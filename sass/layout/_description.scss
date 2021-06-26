@@ -1,0 +1,25 @@
+.description__list {
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  
+  .description__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  
+  .description__head {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  
+  .description__text {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }

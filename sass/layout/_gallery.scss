@@ -1,0 +1,20 @@
+.gallery {
+    margin-bottom: 30px;
+  }
+  
+  .gallery__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gallery__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 270px;
+    height: 120px;
+  
+    background: var(--bg-color-team);
+    border-radius: 4px;
+  }

@@ -1,0 +1,21 @@
+a.current {
+    color: var(--special-text-color);
+    text-decoration: none;
+  
+    position: relative;
+  }
+  
+  a.current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--special-text-color);
+    border-radius: 2px;
+  }
+  
+  .link.current {
+    padding-bottom: 32px;
+  }

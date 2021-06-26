@@ -1,0 +1,41 @@
+.social-join__name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--main-bg-color);
+  
+    margin-bottom: 20px;
+  }
+  
+  .social-join__list {
+    display: flex;
+  }
+  
+  .social-join__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  
+    transition: background-color 250ms linear;
+  }
+  
+  .social-join__list .social-join__item + .social-join__item {
+    margin-left: 10px;
+  }
+  
+  .social-join__icon {
+    fill: var(--main-bg-color);
+  }
+  
+  .social-join__link:hover,
+  .social-join__link:focus {
+    background-color: var(--special-text-color);
+  }

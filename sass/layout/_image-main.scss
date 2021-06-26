@@ -1,0 +1,45 @@
+.section-img {
+    padding-top: 0;
+  }
+  
+  .image__caption {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--name-text-color);
+  }
+  
+  .image__list {
+    display: flex;
+    justify-content: space-between;
+  
+    padding-top: 50px;
+  }
+  
+  .img-item__box {
+    position: relative;
+  }
+  
+  .img-item__subtext {
+    position: absolute;
+    bottom: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 370px;
+    height: 70px;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  
+  .img-item__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  
+    color: var(--main-bg-color);
+  }
