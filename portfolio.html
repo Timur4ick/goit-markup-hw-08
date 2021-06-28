@@ -24,8 +24,7 @@
   <body>
     <header class="header">
       <div class="header__nav container">
-        <a href="./" class="logo">
-          <span class="logo__text">Web</span>Studio</a>
+        <a href="./" class="logo"> <span class="logo__text">Web</span>Studio</a>
 
         <ul class="nav-list list">
           <li class="nav-list__item">
@@ -57,6 +56,58 @@
             >
           </li>
         </ul>
+        <button class="header__mobile-menu-btn" type="button" data-menu-button>
+          <svg class="header__mobile-menu-icon">
+            <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu__container">
+          <button
+            class="mobile-menu__modal-close-btn"
+            type="button"
+            data-menu-close
+          >
+            <svg class="mobile-menu__close-icon">
+              <use href="./images/sprite-3.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button> 
+          <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link link"></a>Студия</li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="link mobile-menu__link current"></a>Портфолио</li>
+            <li class="mobile-menu__item">
+              <a href="./" class="mobile-menu__link link"></a>Контакты</li>
+          </ul>
+          <ul class="mobile-menu__contact list">
+            <li class="mobile-menu__item">
+              <a href="tel:+380961111111" class="mobile-menu__link"
+                >+380961111111</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social list">
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main-bg">
@@ -79,18 +130,41 @@
             <li class="filter__item">
               <button type="button" class="filter__button">Маркетинг</button>
             </li>
-          </ul> 
+          </ul>
           <h2 class="visually-hidden">Наша команда</h2>
           <ul class="menu-team list">
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img.jpg"
-                    alt="Технокряк Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-1.jpg    1x,
+                        ./images/imgs-portfolio/img-1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab1.jpg    1x,
+                        ./images/tablet/img-tab1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob1.jpg    1x,
+                        ./images/mobile/img-mob1@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob1.jpg"
+                      alt="Технокряк Веб-сайт"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -107,12 +181,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-1.jpg"
-                    alt="Постер New Orlean vs Golden Star Дизайн"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-2.jpg    1x,
+                        ./images/imgs-portfolio/img-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab2.jpg    1x,
+                        ./images/tablet/img-tab2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob2.jpg    1x,
+                        ./images/mobile/img-mob2@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob2.jpg"
+                      alt="Постер New Orlean vs Golden Star Дизайн"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -128,12 +225,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-2.jpg"
-                    alt="Ресторан Seafood Приложение"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-3.jpg    1x,
+                        ./images/imgs-portfolio/img-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab3.jpg    1x,
+                        ./images/tablet/img-tab3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob3.jpg    1x,
+                        ./images/mobile/img-mob3@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob3.jpg"
+                      alt="Ресторан Seafood Приложение"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -151,12 +271,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-3.jpg"
-                    alt="Технокряк Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-4.jpg    1x,
+                        ./images/imgs-portfolio/img-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab4.jpg    1x,
+                        ./images/tablet/img-tab4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob4.jpg    1x,
+                        ./images/mobile/img-mob4@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob4.jpg"
+                      alt="Технокряк Веб-сайт"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -173,12 +316,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-4.jpg"
-                    alt="Постер New Orlean vs Golden Star Дизайн"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-5.jpg    1x,
+                        ./images/imgs-portfolio/img-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab5.jpg    1x,
+                        ./images/tablet/img-tab5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob5.jpg    1x,
+                        ./images/mobile/img-mob5@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob5.jpg"
+                      alt="Постер New Orlean vs Golden Star Дизайн"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -195,12 +361,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-5.jpg"
-                    alt="Ресторан Seafood Приложение"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-6.jpg    1x,
+                        ./images/imgs-portfolio/img-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab6.jpg    1x,
+                        ./images/tablet/img-tab6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob6.jpg    1x,
+                        ./images/mobile/img-mob6@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob6.jpg"
+                      alt="Ресторан Seafood Приложение"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -218,12 +407,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-6.jpg"
-                    alt="Технокряк Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-7.jpg    1x,
+                        ./images/imgs-portfolio/img-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab7.jpg    1x,
+                        ./images/tablet/img-tab7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob7.jpg    1x,
+                        ./images/mobile/img-mob7@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob7.jpg"
+                      alt="Технокряк Веб-сайт"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -240,12 +452,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-7.jpg"
-                    alt="Постер New Orlean vs Golden Star Дизайн"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-8.jpg    1x,
+                        ./images/imgs-portfolio/img-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab8.jpg    1x,
+                        ./images/tablet/img-tab8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob8.jpg    1x,
+                        ./images/mobile/img-mob8@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob8.jpg"
+                      alt="Постер New Orlean vs Golden Star Дизайн"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -262,12 +497,35 @@
             <li class="menu-team__item">
               <a href="" class="menu-team__link link">
                 <div class="menu-team__wrapper">
-                  <img
-                    src="./images/imgs-portfolio/img-8.jpg"
-                    alt="Ресторан Seafood Приложение"
-                    width="370"
-                    height="294"
-                  />
+                  <picture class="picture">
+                    <source
+                      srcset="
+                        ./images/imgs-portfolio/img-9.jpg    1x,
+                        ./images/imgs-portfolio/img-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/img-tab9.jpg    1x,
+                        ./images/tablet/img-tab9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/img-mob9.jpg    1x,
+                        ./images/mobile/img-mob9@2x.jpg 2x
+                      "
+                      media="(min-width: 280px)"
+                    />
+
+                    <img
+                      src="./images/mobile/img-mob9.jpg"
+                      alt="Ресторан Seafood Приложение"
+                    />
+                  </picture>
+
                   <p class="menu-team__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -315,28 +573,40 @@
           <ul class="social-join__list list">
             <li class="social-join__item">
               <a href="" class="social-join__link">
-                <svg class="social-join__icon" style="width: 20px; height: 20px">
+                <svg
+                  class="social-join__icon"
+                  style="width: 20px; height: 20px"
+                >
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-join__item">
               <a href="" class="social-join__link">
-                <svg class="social-join__icon" style="width: 20px; height: 20px">
+                <svg
+                  class="social-join__icon"
+                  style="width: 20px; height: 20px"
+                >
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-join__item">
               <a href="" class="social-join__link">
-                <svg class="social-join__icon" style="width: 20px; height: 20px">
+                <svg
+                  class="social-join__icon"
+                  style="width: 20px; height: 20px"
+                >
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-join__item">
               <a href="" class="social-join__link">
-                <svg class="social-join__icon" style="width: 20px; height: 20px">
+                <svg
+                  class="social-join__icon"
+                  style="width: 20px; height: 20px"
+                >
                   <use href="./images/sprite.svg#icon-linkedin2"></use>
                 </svg>
               </a>
@@ -368,5 +638,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

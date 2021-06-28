@@ -1,54 +1,100 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    width: 1600px;
-    margin: auto;
-  
-    background-size: auto;
-    background-color: var(--bg-color-head-foot);
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // width: 1600px;
+  // margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--bg-color-head-foot);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header-img-mob.jpg);
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-img-mob@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-img-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header-img-tab@2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/imgs.jpg);
   }
-  
-  
-  .hero__title{
-    margin: auto;
-    width: 696px;
-    margin-bottom: 30px;
-  
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--main-bg-color);
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Imgs@2x.jpg);
   }
-  
-  .hero__btn {
-    display: block;
-    width: 200px;
-    height: 50px;
-    margin: auto;
-    border: none;
-    padding: 0;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    background-color: var(--special-text-color);
-    color: var(--main-bg-color);
-  
-    transition: color 250ms linear;
-  }
-  
-  .hero__btn:hover,
-  .hero__btn:focus {
-    color: var(--main-text-color-master);
-    cursor: pointer;
-  }
+}
+
+.hero__title {
+  margin: auto;
+  width: 696px;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+
+.hero__btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin: auto;
+  border: none;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  background-color: var(--special-text-color);
+  color: var(--main-bg-color);
+
+  transition: color 250ms linear;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  color: var(--main-text-color-master);
+  cursor: pointer;
+}

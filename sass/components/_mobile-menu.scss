@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    overflow: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  
+
+  &__container {
+    position: relative;
+
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 48px;
+  }
+
+  
+
+  &__modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    background-color: transparent;
+
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__close-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
