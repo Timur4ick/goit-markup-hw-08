@@ -1,17 +1,33 @@
 .client__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
     display: flex;
     margin-top: 50px;
   }
+    
+  }
   
   .client__item {
+
+    @media screen and (max-width: 480px) {
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    width: 170px;
-    height: 92px;
+
+  height: 92px;
+   width: 210px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  width: 170px;
+    
+}
+ 
   }
   
   .client__card {
@@ -37,5 +53,14 @@
   }
   
   .client__list .client__item + .client__item {
-    margin-left: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+    
+  }
+
+  .client__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 30px;
   }

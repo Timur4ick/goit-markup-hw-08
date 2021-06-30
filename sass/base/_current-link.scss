@@ -19,3 +19,8 @@ a.current {
   .link.current {
     padding-bottom: 32px;
   }
+
+  .link-current {
+    color: var(--special-text-color);
+    text-decoration: none;
+  }

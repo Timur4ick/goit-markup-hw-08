@@ -39,7 +39,11 @@
               <a href="./contacs.html" class="link">Контакты</a>
             </li>
           </ul>
-        
+           <button class="header__mobile-menu-btn" type="button" data-menu-button>
+<svg class="header__mobile-menu-icon">
+  <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
+</svg>
+        </button>
         <ul class="contact list">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
@@ -58,11 +62,7 @@
             </a>
           </li>
         </ul>
-        <button class="header__mobile-menu-btn" type="button" data-menu-button>
-<svg class="header__mobile-menu-icon">
-  <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
-</svg>
-        </button>
+     
       </div>
       <div class="mobile-menu is-open" data-menu>
         <div class="container mobile-menu__container">
@@ -73,33 +73,33 @@
         </button>
         <ul class="mobile-menu__nav list" >
 <li class="mobile-menu__item">
-  <a href="./index.html" class="link current">Студия</a></li>
+  <a href="./index.html" class="mobile-menu__link link-current">Студия</a></li>
 <li class="mobile-menu__item">
-  <a href="./portfolio.html" class="link">Портфолио</a></li>
+  <a href="./portfolio.html" class="mobile-menu__link link">Портфолио</a></li>
 <li class="mobile-menu__item">
-  <a href="./" class="link">Контакты</a>
+  <a href="./" class="mobile-menu__link link">Контакты</a>
 </li>
         </ul>
         <ul class="mobile-menu__contact list">
 <li class="mobile-menu__item">
-  <a href="tel:+380961111111" class="mobile-menu__link">+380961111111</a>
+  <a href="tel:+380961111111" class="mobile-menu__link-tel link">+380961111111</a>
 </li>
 <li class="mobile-menu__item">
-  <a href="mailto:info@devstudio.com" class="mobile-menu__link">info@devstudio.com</a>
+  <a href="mailto:info@devstudio.com" class="mobile-menu__link-mail link">info@devstudio.com</a>
 </li>
         </ul>
         <ul class="mobile-menu__social list">
 <li class="mobile-menu__social-item">
-  <a href="#" class="mobile-menu__social-link">Instagram</a>
+  <a href="#" class="mobile-menu__social-link link">Instagram</a>
 </li>
 <li class="mobile-menu__social-item">
-  <a href="#" class="mobile-menu__social-link">Twitter</a>
+  <a href="#" class="mobile-menu__social-link link">Twitter</a>
 </li>
 <li class="mobile-menu__social-item">
-  <a href="#" class="mobile-menu__social-link">Facebook</a>
+  <a href="#" class="mobile-menu__social-link link">Facebook</a>
 </li>
 <li class="mobile-menu__social-item">
-  <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+  <a href="#" class="mobile-menu__social-link link">LinkedIn</a>
 </li>
         </ul>
         </div>
@@ -121,53 +121,48 @@
           <div class="gallery">
             <ul class="gallery__list list">
               <li class="gallery__item">
+<div class="gallery__wrapper">
                 <svg class="gallery__icon" style="width: 70px; height: 70px">
                   <use href="./images/sprite-2.svg#icon-antenna-1"></use>
                 </svg>
-              </li>
-              <li class="gallery__item">
-                <svg class="gallery__icon" style="width: 70px; height: 70px">
-                  <use href="./images/sprite-2.svg#icon-clock-1"></use>
-                </svg>
-              </li>
-              <li class="gallery__item">
-                <svg class="gallery__icon" style="width: 70px; height: 70px">
-                  <use href="./images/sprite-2.svg#icon-diagram-1"></use>
-                </svg>
-              </li>
-              <li class="gallery__item">
-                <svg class="gallery__icon" style="width: 70px; height: 70px">
-                  <use href="./images/sprite-2.svg#icon-astronaut-1"></use>
-                </svg>
-              </li>
-            </ul>
-          </div>
-          <div class="description">
-            <ul class="description__list list">
-              <li class="description__item">
-                <h3 class="description__head">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+</div>
+<h3 class="description__head">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                 <p class="description__text">
                   Идейные соображения,а также началоповседневной работы по
                   формированию позиции.
                 </p>
               </li>
-              <li class="description__item">
-                <h3 class="description__head">ПУНКТУАЛЬНОСТЬ</h3>
+              <li class="gallery__item">
+                <div class="gallery__wrapper">
+                <svg class="gallery__icon" style="width: 70px; height: 70px">
+                  <use href="./images/sprite-2.svg#icon-clock-1"></use>
+                </svg>
+</div>
+<h3 class="description__head">ПУНКТУАЛЬНОСТЬ</h3>
                 <p class="description__text">
                   Задача организации,в особенности же рамки и место обучения
                   кадров влечёт за собой.
                 </p>
               </li>
-
-              <li class="description__item">
-                <h3 class="description__head">ПЛАНИРОВАНИЕ</h3>
+              <li class="gallery__item">
+                <div class="gallery__wrapper">
+                <svg class="gallery__icon" style="width: 70px; height: 70px">
+                  <use href="./images/sprite-2.svg#icon-diagram-1"></use>
+                </svg>
+</div>
+<h3 class="description__head">ПЛАНИРОВАНИЕ</h3>
                 <p class="description__text">
                   Равным образом консультация с широким активом в значительной
                   степени обусловливает.
                 </p>
               </li>
-              <li class="description__item">
-                <h3 class="description__head">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+              <li class="gallery__item">
+                <div class="gallery__wrapper">
+                <svg class="gallery__icon" style="width: 70px; height: 70px">
+                  <use href="./images/sprite-2.svg#icon-astronaut-1"></use>
+                </svg>
+</div>
+<h3 class="description__head">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                 <p class="description__text">
                   Значимость этих проблем настолько очевидна,что реализация
                   плановых заданий.
@@ -175,6 +170,23 @@
               </li>
             </ul>
           </div>
+          <!-- <div class="description">
+            <ul class="description__list list">
+              <li class="description__item">
+                
+              </li>
+              <li class="description__item">
+                
+              </li>
+
+              <li class="description__item">
+                
+              </li>
+              <li class="description__item">
+                
+              </li>
+            </ul>
+          </div> -->
         </div>
       </section>
       <!-- happy -->
