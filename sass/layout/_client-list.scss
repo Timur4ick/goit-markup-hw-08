@@ -1,7 +1,15 @@
 .client__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  @media screen and (max-width: 1199px) {
+display: flex;
+flex-wrap: wrap;
+margin-left: -15px;
+margin-top: -30px;
+ }
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -10,26 +18,58 @@
     
   }
   
-  .client__item {
+// .client__list .client__item + .client__item:not(:last-child) {
+// margin-right: 30px;
+// margin-bottom: 30px;
 
-    @media screen and (max-width: 480px) {
+// }
+
+.team-cur {
+  margin-bottom: 30px;
+}
+
+.client__item {
+
+border: 1px solid #afb1b8;
+    border-radius: 4px;
+height: 92px;
+
+    @media screen and (max-width: 767px) {
+flex-basis: calc((100% - 30px) / 2);
+margin-left: 15px;
+margin-top: 30px;
+   max-width: 210px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-  height: 92px;
-   width: 210px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  flex-basis: calc((100% - 45px) / 3);
+  margin-left: 15px;
+  margin-top: 30px;
+
+  max-width: 226px;
 }
 
 @media screen and (min-width: 1200px) {
-  width: 170px;
+  max-width: 170px;
     
 }
  
   }
-  
+
+  .client__link {
+
+    @media screen and (min-width: 768px) {
+      max-width: 226px;
+      padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
   .client__card {
     width: 106px;
     height: 60px;
@@ -52,15 +92,13 @@
     fill: var(--special-text-color);
   }
   
-  .client__list .client__item + .client__item {
 
-    @media screen and (min-width: 1200px) {
-      margin-left: 30px;
-    }
-    
+    .client__list .client__item + .client__item {
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
   }
 
-  .client__item:not(:last-child) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
+
+  

@@ -1,8 +1,13 @@
 .modal-form-checkbox-policy {
     font-style: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     color: var(--main-text-color);
+
+@media screen and (min-width: 1200px) {
+  font-size: 14px;
+    line-height: 1.71;
+}
   }
 
   .modal-form-checkbox-policy::before {

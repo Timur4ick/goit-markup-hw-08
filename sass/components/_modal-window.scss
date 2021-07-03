@@ -4,12 +4,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
   
-    width: 528px;
-    height: 580px;
+width: 100vw;
+height: 100vh;
     background-color: var(--main-bg-color);
     border-radius: 4px;
   
     padding: 40px;
+
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    height: 580px;
+    }
   }
   
   .modal-close-btn {

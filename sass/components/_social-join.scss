@@ -1,5 +1,5 @@
 .social-join__name {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
@@ -7,11 +7,19 @@
   
     color: var(--main-bg-color);
   
-    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+       margin-bottom: 20px;
+    }
+   
   }
   
   .social-join__list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 60px;
   }
   
   .social-join__link {

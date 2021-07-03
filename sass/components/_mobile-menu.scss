@@ -1,15 +1,17 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .mobile-menu {
     display: none;
   }
 }
+  
+
 
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
 
-  width: 100vw;
+  width: 100%;
   // z-index: 10;
   max-width: 768px;
   height: 100%;
@@ -27,6 +29,7 @@
   padding-left: 25px;
   padding-right: 15px;
   padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .mobile-menu__contact {
@@ -82,12 +85,21 @@ flex-wrap: nowrap;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
+  
+  transition: color 250ms linear;
+
 }
+
+.mobile-menu__item:hover,
+.mobile-menu__item:focus {
+color: var(--special-text-color)
+}
+
 
 .mobile-menu__modal-close-btn {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 10px;
 
   background-color: transparent;
 
@@ -96,6 +108,11 @@ flex-wrap: nowrap;
   width: 40px;
   height: 40px;
 
+}
+
+.mobile-menu__modal-close-btn:hover, 
+.mobile-menu__modal-close-btn:focus {
+fill: var(--special-text-color)
 }
 
 .mobile-menu__close-icon {

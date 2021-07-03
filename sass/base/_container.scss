@@ -4,14 +4,13 @@
   margin-left: auto;
   margin-right: auto;
 
- @media screen and (max-width:767px) {
+ @media screen and (max-width: 1200px) {
   padding-left: 15px;
   padding-right: 15px;
-  width: 480px;
  }
 
 // 480+
-@media screen and (min-width:480px) {
+@media screen and (min-width: 480px) {
   width: 480px;
 }
 
