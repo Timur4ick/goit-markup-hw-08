@@ -25,7 +25,11 @@
     <header class="header">
       <div class="header__nav container">
         <a href="./" class="logo"> <span class="logo__text">Web</span>Studio</a>
-
+<button class="header__mobile-menu-btn" type="button" data-menu-button>
+          <svg class="header__mobile-menu-icon">
+            <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
         <ul class="nav-list list">
           <li class="nav-list__item">
             <a href="./index.html" class="link">Студия</a>
@@ -57,13 +61,9 @@
           </li>
         </ul>
       </div>
-        <button class="header__mobile-menu-btn" type="button" data-menu-button>
-          <svg class="header__mobile-menu-icon">
-            <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
-          </svg>
-        </button>
+        
       
-      <div class="mobile-menu is-open" data-menu>
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button
             class="mobile-menu__modal-close-btn"

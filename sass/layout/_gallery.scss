@@ -1,17 +1,20 @@
+.aside {
+margin: auto;
+}
+
 .gallery {
     margin-bottom: 30px;
   }
 
-  .gellary__wrapper {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .gallery__wrapper {
+    padding: 25px 190px;
     height: 120px;
     margin-bottom: 30px;
-width: 480px;
 
     text-align: center;
-    border-radius: 4px;
+   align-items: center;
     background-color: var(--bg-color-team);
+    border-radius: 4px;
   }
   
   .gallery__list {
@@ -20,18 +23,18 @@ width: 100%;
     @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
   }
   }
   
   .gallery__item {
-    
-
-max-width: 450px;
-
+  max-width: 450px;
+margin-bottom: 30px;
   display: flex;
   flex-direction: column;
     justify-content: center;
-    align-items: center;
+    
 
     @media screen and (min-width: 768px){
       max-width: 354px;
@@ -39,12 +42,18 @@ max-width: 450px;
 
     @media screen and (min-width: 1200px) {
     max-width: 270px;
-    
+    margin-left: 30px;
+ margin-top: 30px;
+  flex-basis: calc((100% - 120px) / 4);
     }
   }
 
-  .gallery__item:not(:last-child) {
+
+  @media screen and (min-width: 768px) {
+    .gallery__item:not(:last-child) {
     margin-right: 30px;
+  }
+  
   }
 
   .gallery-icon {
@@ -56,3 +65,26 @@ max-width: 450px;
 // justify-content: center;
 // text-align: center;
 //   }
+
+.gallery__head {
+  display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    text-align: none;
+  }
+}
+
+.gallery__text {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}

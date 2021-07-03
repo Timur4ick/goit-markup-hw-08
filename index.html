@@ -27,7 +27,11 @@
       <div class="header__nav container">
         <a href="./" class="logo">
           <span class="logo__text">Web</span>Studio</a>
-        
+                <button class="header__mobile-menu-btn" type="button" data-menu-button>
+<svg class="header__mobile-menu-icon">
+  <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
+</svg>
+        </button>
           <ul class="nav-list list">
             <li class="nav-list__item">
               <a href="./index.html" class="link current">Студия</a>
@@ -39,11 +43,7 @@
               <a href="./contacs.html" class="link">Контакты</a>
             </li>
           </ul>
-           <button class="header__mobile-menu-btn" type="button" data-menu-button>
-<svg class="header__mobile-menu-icon">
-  <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
-</svg>
-        </button>
+   
         <ul class="contact list">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
@@ -64,7 +64,7 @@
         </ul>
      
       </div>
-      <div class="mobile-menu is-open" data-menu>
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
         <button class="mobile-menu__modal-close-btn" type="button" data-menu-close>
           <svg class="mobile-menu__close-icon">
@@ -108,13 +108,14 @@
 
     <!--Основа-->
     <main class="main-bg">
+    <div class="container">
       <section class="hero section">
         <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero__btn" data-modal-open>
           Заказать услугу
         </button>
       </section>
-
+</div>
       
       <section class="aside section">
         <div class="container">
@@ -126,8 +127,8 @@
                   <use href="./images/sprite-2.svg#icon-antenna-1"></use>
                 </svg>
 </div>
-<h3 class="description__head">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-                <p class="description__text">
+<h3 class="gallery__head">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+                <p class="gallery__text">
                   Идейные соображения,а также началоповседневной работы по
                   формированию позиции.
                 </p>
@@ -138,8 +139,8 @@
                   <use href="./images/sprite-2.svg#icon-clock-1"></use>
                 </svg>
 </div>
-<h3 class="description__head">ПУНКТУАЛЬНОСТЬ</h3>
-                <p class="description__text">
+<h3 class="gallery__head">ПУНКТУАЛЬНОСТЬ</h3>
+                <p class="gallery__text">
                   Задача организации,в особенности же рамки и место обучения
                   кадров влечёт за собой.
                 </p>
@@ -150,8 +151,8 @@
                   <use href="./images/sprite-2.svg#icon-diagram-1"></use>
                 </svg>
 </div>
-<h3 class="description__head">ПЛАНИРОВАНИЕ</h3>
-                <p class="description__text">
+<h3 class="gallery__head">ПЛАНИРОВАНИЕ</h3>
+                <p class="gallery__text">
                   Равным образом консультация с широким активом в значительной
                   степени обусловливает.
                 </p>
@@ -162,8 +163,8 @@
                   <use href="./images/sprite-2.svg#icon-astronaut-1"></use>
                 </svg>
 </div>
-<h3 class="description__head">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-                <p class="description__text">
+<h3 class="gallery__head">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+                <p class="gallery__text">
                   Значимость этих проблем настолько очевидна,что реализация
                   плановых заданий.
                 </p>
@@ -239,8 +240,9 @@
       </section>
       <!--Наша Команда-->
       <section class="section-team section">
-        <h2 class="caption">Наша команда</h2>
+        
         <div class="team container">
+          <h2 class="caption">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
               <picture class="picture">
