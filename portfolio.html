@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <!--адаптация под IE и Edje-->
-    <meta name="goit-markup-hw-07" content="Четвертое ДЗ" />
-    <title>goit-homework-07</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goit-homework-08</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -18,13 +18,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css"
     />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__nav container">
-        <a href="./" class="logo"> <span class="logo__text">Web</span>Studio</a>
+        <a href="./" class="logo">
+          <span class="logo__text">Web</span>Studio</a>
 <button class="header__mobile-menu-btn" type="button" data-menu-button>
           <svg class="header__mobile-menu-icon">
             <use href="./images/sprite-menu-btn.svg#icon-menu_40px"></use>
@@ -45,7 +45,7 @@
         <ul class="contact list">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
-              <svg class="contact__icon" style="width: 16px; height: 12px">
+              <svg class="contact__icon-mail">
                 <use href="./images/sprite-2.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com</a
@@ -53,7 +53,7 @@
           </li>
           <li class="contact__item">
             <a href="tel:+380961111111" class="contact__link">
-              <svg class="contact__icon" style="width: 10px; height: 16px">
+              <svg class="contact__icon-tel">
                 <use href="./images/sprite-2.svg#icon-smartphone"></use>
               </svg>
               +380961111111</a
@@ -62,7 +62,6 @@
         </ul>
       </div>
         
-      
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button
@@ -84,28 +83,28 @@
           </ul>
           <ul class="mobile-menu__contact list">
             <li class="mobile-menu__item">
-              <a href="tel:+380961111111" class="mobile-menu__link"
+              <a href="tel:+380961111111" class="mobile-menu__link-tel link"
                 >+380961111111</a
               >
             </li>
             <li class="mobile-menu__item">
-              <a href="mailto:info@devstudio.com" class="mobile-menu__link"
+              <a href="mailto:info@devstudio.com" class="mobile-menu__link-mail link"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
           <ul class="mobile-menu__social list">
             <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link">Instagram</a>
+              <a href="#" class="mobile-menu__social-link link">Instagram</a>
             </li>
             <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link">Twitter</a>
+              <a href="#" class="mobile-menu__social-link link">Twitter</a>
             </li>
             <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link">Facebook</a>
+              <a href="#" class="mobile-menu__social-link link">Facebook</a>
             </li>
             <li class="mobile-menu__social-item">
-              <a href="#" class="mobile-menu__social-link">LinkedIn</a>
+              <a href="#" class="mobile-menu__social-link link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -547,7 +546,7 @@
 
     <footer class="footer">
       <div class="footer__contact container">
-        <div class="logo">
+        <div class="logo-foot">
           <a href="./index.html" class="logo__footer"
             ><span class="logo__text">Web</span>Studio</a
           >
