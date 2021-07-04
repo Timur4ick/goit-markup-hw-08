@@ -100,19 +100,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -866,7 +866,7 @@ img {
 }
 
 .subscribe-form__input {
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   padding-left: 16px;
   background-color: inherit;
@@ -876,6 +876,12 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1239,33 +1245,31 @@ img {
   margin: auto;
 }
 
-.gallery__wrapper {
-  padding: 25px 190px;
-  width: 450px;
-  height: 120px;
-  margin-bottom: 30px;
-  text-align: center;
-  align-items: center;
-  background-color: var(--bg-color-team);
-  border-radius: 4px;
+@media screen and (min-width: 280px) {
+  .gallery__wrapper {
+    padding: 25px 190px;
+    max-width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    background-color: var(--bg-color-team);
+    border-radius: 4px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .gallery__wrapper {
-    width: 354px;
+    max-width: 354px;
     padding: 25px 142px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .gallery__wrapper {
-    width: 270px;
+    max-width: 270px;
     padding: 25px 100px;
   }
-}
-
-.gallery__list {
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
