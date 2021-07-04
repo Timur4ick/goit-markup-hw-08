@@ -1,32 +1,59 @@
 .filter__list {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: start;
+margin-bottom: 16px;
+
+@media screen and (min-width: 768px) {
     justify-content: center;
+    flex-wrap: nowrap;
+}
+
+  @media screen and (min-width: 1200px) {
     align-items: center;
-  
     padding-bottom: 34px;
     margin: 0 auto;
   }
+    
+  }
   
-  .filter__item {
-    background-color: var(--bg-color-team);
+  // .filter__item {
+    
+    
+
+  // }
+
+  @media screen and (max-width: 767px) {
+    .filter__item {
+      margin-right: 8px;
+      margin-bottom: 15px;
+    }
   }
   
   .filter__button {
-    font-weight: 500;
+      font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--name-text-color);
+    background-color: var(--bg-color-team);
     border: none;
-    border-radius: 4px;
     padding: 6px 22px;
-  
+  border-radius: 4px;
     transition: color 250ms linear, background-color 250ms linear;
   }
-  
-  .filter__list .filter__item + .filter__item {
+
+  @media screen and (max-width: 1199px) {
+  .filter__item:not(:last-child) {
+    margin-right: 8px;
+  }
+   } 
+
+  @media screen and (min-width: 1200px) {
+    .filter__list .filter__item + .filter__item {
     margin-left: 8px;
+  }
   }
   
   .filter__button:hover,
