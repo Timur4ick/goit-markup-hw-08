@@ -1247,7 +1247,7 @@ img {
 
 @media screen and (min-width: 280px) {
   .gallery__wrapper {
-    padding: 25px 190px;
+    padding: 25px;
     max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
