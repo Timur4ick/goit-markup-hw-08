@@ -1,71 +1,63 @@
-
 .social-join {
-@media screen and (min-width: 1200px) {
-  margin-top: 0;
-  margin-left: 70px;
-}
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 70px;
+  }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     position: absolute;
     top: 65px;
     right: 119px;
-
   }
 }
 
-
 .social-join__name {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  
-    color: var(--main-bg-color);
-  
-    @media screen and (min-width: 768px) {
-       margin-bottom: 20px;
-    }
-   
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-bg-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
   }
-  
-  .social-join__list {
+}
 
- display: flex;
-    justify-content: center;
-    align-items: center;
+.social-join__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @media screen and (max-width: 767px) {
-     
-
+  @media screen and (max-width: 767px) {
     margin-top: 20px;
     margin-bottom: 60px;
-    }
-    
   }
-  
-  .social-join__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-  
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-  
-    transition: background-color 250ms linear;
-  }
-  
-  .social-join__list .social-join__item + .social-join__item {
-    margin-left: 10px;
-  }
-  
-  .social-join__icon {
-    fill: var(--main-bg-color);
-  }
-  
-  .social-join__link:hover,
-  .social-join__link:focus {
-    background-color: var(--special-text-color);
-  }
+}
+
+.social-join__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 250ms linear;
+}
+
+.social-join__list .social-join__item + .social-join__item {
+  margin-left: 10px;
+}
+
+.social-join__icon {
+  fill: var(--main-bg-color);
+}
+
+.social-join__link:hover,
+.social-join__link:focus {
+  background-color: var(--special-text-color);
+}

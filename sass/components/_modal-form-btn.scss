@@ -1,31 +1,31 @@
 .modal-button {
-    margin: 0 auto;
-    padding-bottom: 40px;
-  }
-  
-  .modal-form-btn {
-    display: block;
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    border: none;
-    padding: 0;
-    align-self: center;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    border-radius: 4px;
-    background-color: var(--special-text-color);
-    color: var(--main-bg-color);
-  
-    transition: color 250ms linear;
-  }
-  
-  .modal-form-btn:hover,
-  .modal-form-btn:focus {
-    color: var(--main-text-color-master);
-    cursor: pointer;
-  }
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.modal-form-btn {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: none;
+  padding: 0;
+  align-self: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  background-color: var(--special-text-color);
+  color: var(--main-bg-color);
+
+  transition: color 250ms linear;
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  color: var(--main-text-color-master);
+  cursor: pointer;
+}

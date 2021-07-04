@@ -1,46 +1,46 @@
 .social {
-    padding: 0 32px;
-    width: 206px;
-    height: 44px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .social__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .social__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .social__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-  
-    border-radius: 50%;
-    background-color: var(--main-bg-color);
-  
-    transition: background-color 250ms linear, fill 250ms linear;
-  }
-  
-  .social__icon {
-    fill: var(--card-social-color);
-  }
-  
-  .social__link:hover,
-  .social__link:focus {
-    background-color: var(--special-text-color);
-  }
-  
-  .social__link:hover .social__icon,
-  .social__link:focus .social__icon {
-    fill: var(--main-bg-color);
-  }
+  padding: 0 32px;
+  width: 206px;
+  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
+
+  transition: background-color 250ms linear, fill 250ms linear;
+}
+
+.social__icon {
+  fill: var(--card-social-color);
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: var(--special-text-color);
+}
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  fill: var(--main-bg-color);
+}

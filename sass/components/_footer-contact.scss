@@ -13,9 +13,6 @@
 }
 
 .footer__contact {
-  // display: flex;
-  // flex-direction: column;
-
   text-align: center;
 
   padding-top: 60px;
@@ -24,7 +21,6 @@
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     vertical-align: baseline;
-    
   }
 
   @media screen and (min-width: 1200px) {
@@ -85,7 +81,6 @@
 }
 
 .footer__address {
-
   text-align: center;
   margin: 20px auto;
 
@@ -117,7 +112,7 @@
 .footer__list {
   display: flex;
   flex-direction: column;
-  
+
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 60px;
@@ -129,13 +124,12 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
 
-@media screen and (max-width: 1199px) {
-  align-items: center;
-}
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 9px;
-    
   }
 }
 

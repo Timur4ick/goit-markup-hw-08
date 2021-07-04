@@ -973,6 +973,12 @@ img {
   padding: 40px;
 }
 
+@media screen and (min-width: 320px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;

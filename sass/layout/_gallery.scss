@@ -1,39 +1,36 @@
 .aside {
-margin: auto;
+  margin: auto;
 }
 
-  .gallery__wrapper {
-
-    @media screen and (min-width: 280px) {
-       padding: 25px;
-   max-width: 450px;
+.gallery__wrapper {
+  @media screen and (min-width: 280px) {
+    padding: 25px;
+    max-width: 450px;
     height: 120px;
     margin-bottom: 30px;
 
     text-align: center;
-   align-items: center;
+    align-items: center;
     background-color: var(--bg-color-team);
     border-radius: 4px;
-    }
-   
-
-    @media screen and (min-width: 768px) {
-      max-width: 354px;
-      padding: 25px 142px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      max-width: 270px;
-      padding: 25px 100px;
-    }
   }
-  
-  .gallery__list {
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+    padding: 25px 142px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+    padding: 25px 100px;
+  }
+}
+
+.gallery__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    
+
     margin-left: -15px;
     margin-top: -30px;
   }
@@ -42,43 +39,35 @@ margin: auto;
     display: flex;
     justify-content: space-between;
   }
-  }
-  
-  .gallery__item {
-margin-bottom: 30px;
+}
+
+.gallery__item {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-    flex-wrap: wrap;
-    
+  flex-wrap: wrap;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      max-width: 354px;
-      margin-left: 15px;
-      margin-top: 30px;
-      flex-basis: calc((100% - 30px) / 2);
-    }
-
-    @media screen and (min-width: 1200px) {
-    max-width: 270px;
-    
-  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+    margin-left: 15px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 1200px) {
-    .gallery__item:not(:last-child) {
-margin-right: 30px;
+    max-width: 270px;
   }
-  }
+}
 
-  .gallery-icon {
-    margin: auto;
+@media screen and (min-width: 1200px) {
+  .gallery__item:not(:last-child) {
+    margin-right: 30px;
   }
+}
 
-//   .gallery__icon {
-// display: flex;
-// justify-content: center;
-// text-align: center;
-//   }
+.gallery-icon {
+  margin: auto;
+}
 
 .gallery__head {
   display: block;
@@ -89,9 +78,9 @@ margin-right: 30px;
   text-transform: uppercase;
   margin-bottom: 10px;
 
-@media screen and (max-width: 767px) {
-  text-align: center;
-}
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 
   @media screen and (min-width: 768px) {
     text-align: none;
