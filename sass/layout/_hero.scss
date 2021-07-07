@@ -1,4 +1,6 @@
 .hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,6 +41,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)

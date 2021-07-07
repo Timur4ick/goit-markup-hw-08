@@ -53,7 +53,9 @@
 
 .mobile-menu__social {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: start;
+
 
   color: var(--special-text-color);
   font-weight: 500;
@@ -75,6 +77,11 @@
   margin-left: 10px;
 }
 
+.mobile-menu__social-item:last-child::after {
+  margin: 0;
+  width: 0;
+}
+
 .mobile-menu__item {
   font-weight: 500;
   font-size: 40px;
@@ -85,7 +92,6 @@
   transition: color 250ms linear;
 }
 
-.mobile-menu__item:hover,
 .mobile-menu__item:focus {
   color: var(--special-text-color);
 }
@@ -101,6 +107,8 @@
   padding: 0;
   width: 40px;
   height: 40px;
+
+  transition: fill 250ms linear;
 }
 
 .mobile-menu__modal-close-btn:hover,
