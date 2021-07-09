@@ -37,7 +37,11 @@
 .logo-foot {
   text-align: center;
   justify-content: center;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  
 }
 
 .logo__footer {
@@ -53,15 +57,13 @@ font-weight: 700;
   text-decoration: none;
   color: var(--main-bg-color);
 
-  @media screen and (min-width: 768px) {
-  
-  }
 
   @media screen and (min-width: 1200px) {
     width: 145px;
     font-size: 26px;
     line-height: 1.19;
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -78,7 +80,7 @@ font-weight: 700;
   @media screen and (min-width: 1200px) {
     width: 231px;
     height: 81px;
-    margin-left: 10px;
+    // margin-left: 10px;
   }
 }
 

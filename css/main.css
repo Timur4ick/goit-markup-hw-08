@@ -665,7 +665,12 @@ img {
 .logo-foot {
   text-align: center;
   justify-content: center;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo-foot {
+    margin-bottom: 60px;
+  }
 }
 
 .logo__footer {
@@ -686,6 +691,7 @@ img {
     font-size: 26px;
     line-height: 1.19;
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -697,7 +703,6 @@ img {
   .adress-block {
     width: 231px;
     height: 81px;
-    margin-left: 10px;
   }
 }
 
@@ -769,8 +774,13 @@ img {
 .subscribe {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin-top: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1668,6 +1678,9 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1692,12 +1705,6 @@ img {
   .client__item {
     max-width: 170px;
   }
-}
-
-.client__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @media screen and (min-width: 768px) {

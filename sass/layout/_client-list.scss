@@ -25,15 +25,16 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   height: 92px;
+display: flex;
+    justify-content: center;
+    align-items: center;
 
   @media screen and (max-width: 767px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
     max-width: 210px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -50,9 +51,9 @@
 }
 
 .client__link {
-display: flex;
-    justify-content: center;
-    align-items: center;
+// display: flex;
+//     justify-content: center;
+//     align-items: center;
 
   @media screen and (min-width: 768px) {
     max-width: 226px;
