@@ -37,15 +37,18 @@
 .logo-foot {
   text-align: center;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .logo__footer {
+  font-family: "Raleway", sans-serif;
   width: 154px;
   height: 28px;
   font-size: 24px;
   line-height: 1.17;
-
+font-weight: 700;
   text-align: center;
+  
 
   text-decoration: none;
   color: var(--main-bg-color);

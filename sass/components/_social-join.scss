@@ -3,10 +3,6 @@
     margin-top: 0;
     margin-left: 70px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
-  }
 }
 
 .social-join__name {
@@ -30,9 +26,9 @@
 
   @media screen and (max-width: 767px) {
     margin-top: 20px;
-    margin-bottom: 60px;
+  
   }
-}
+}  
 
 .social-join__link {
   display: flex;

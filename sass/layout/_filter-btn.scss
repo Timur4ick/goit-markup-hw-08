@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -40,6 +39,10 @@
   .filter__item:not(:last-child) {
     margin-right: 8px;
   }
+}
+
+.filter__item:nth-last-child(n+2) {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1200px) {

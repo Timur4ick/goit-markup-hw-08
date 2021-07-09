@@ -38,7 +38,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .menu-team__item:not(:last-child) {
+  .menu-team__item :not(:last-child) {
   margin-bottom: 30px;
   }
 }
