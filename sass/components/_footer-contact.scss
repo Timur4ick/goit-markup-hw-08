@@ -6,10 +6,10 @@
   
   }
 
-  @media screen and (min-width: 1200px) {
-    height: 252px;
-    max-width: 1600px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   height: 252px;
+  //   max-width: 1600px;
+  // }
 }
 
 .footer__contact {
@@ -63,7 +63,9 @@ font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     margin: 0;
-    text-align: left;
+    
+    display: flex;
+    justify-content: start;
   }
 }
 
@@ -79,8 +81,7 @@ font-weight: 700;
 
   @media screen and (min-width: 1200px) {
     width: 231px;
-    height: 81px;
-    // margin-left: 10px;
+    margin-top: 20px;
   }
 }
 

@@ -409,7 +409,7 @@ img {
   max-width: 768px;
   height: 100%;
   background-color: var(--main-bg-color);
-  overflow: auto;
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -631,13 +631,6 @@ img {
   background-color: var(--bg-color-head-foot);
 }
 
-@media screen and (min-width: 1200px) {
-  .footer {
-    height: 252px;
-    max-width: 1600px;
-  }
-}
-
 .footer__contact {
   text-align: center;
   padding-top: 60px;
@@ -691,7 +684,8 @@ img {
     font-size: 26px;
     line-height: 1.19;
     margin: 0;
-    text-align: left;
+    display: flex;
+    justify-content: start;
   }
 }
 
@@ -702,7 +696,7 @@ img {
 @media screen and (min-width: 1200px) {
   .adress-block {
     width: 231px;
-    height: 81px;
+    margin-top: 20px;
   }
 }
 
@@ -779,14 +773,13 @@ img {
 @media screen and (max-width: 1199px) {
   .subscribe {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: 93px;
-    margin-top: 12px;
   }
 }
 
@@ -829,6 +822,7 @@ img {
   .subscribe-form {
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
   }
 }
 
@@ -884,6 +878,12 @@ img {
   margin: 0 auto;
   margin-top: 20px;
   transition: color 250ms linear;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form__btn {
+    margin: 0;
+  }
 }
 
 .subscribe-form__icon {
@@ -1468,7 +1468,6 @@ img {
   flex-direction: column;
   padding: 20px 24px;
   border-top: 0;
-  border: 1px solid #EEEEEE;
   justify-content: space-between;
 }
 
@@ -1544,7 +1543,6 @@ img {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    width: 100%;
   }
 }
 
@@ -1638,6 +1636,7 @@ img {
   background: #ffffff;
   padding: 20px 20px;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
