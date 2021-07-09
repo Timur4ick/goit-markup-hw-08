@@ -693,10 +693,15 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .adress-block {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .adress-block {
     width: 231px;
-    margin-top: 20px;
   }
 }
 
@@ -790,6 +795,7 @@ img {
   text-transform: uppercase;
   color: var(--main-bg-color);
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 @media screen and (min-width: 768px) {
