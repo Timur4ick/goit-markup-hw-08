@@ -2,7 +2,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-// display: grid;
 
     margin-left: -30px;
     margin-top: -30px;
@@ -17,23 +16,21 @@
 }
 
 .menu-team__item {
-  max-width: 450px;
+  // max-width: 450px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width) {
     max-width: 354px;
-    height: 404px;
-    flex-basis: calc(100% / 2 - 30px);
+   height: 404px;
+    flex-basis: calc(100% / 2 - 60px);
     margin-left: 30px;
     margin-top: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    
-    width: 370px;
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc(100% / 3 - 60px);
     margin-left: 30px;
     margin-top: 30px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 }
 
@@ -98,11 +95,11 @@
 .signature {
   // padding: 20px 24px;
   // border: 1px solid var(--border-color);
-  // border-top: none;
+  border-top: none;
 
-  background: #ffffff;
+  background: var(--main-bg-color);
     padding: 20px 20px;
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--border-color);
     flex-grow: 1;
     display: flex;
     flex-direction: column;
