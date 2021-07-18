@@ -107,7 +107,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 
@@ -1258,7 +1258,6 @@ img {
 @media screen and (min-width: 1200px) {
   .gallery__list {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -1543,7 +1542,7 @@ img {
   color: var(--main-bg-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .menu-team {
     display: flex;
     flex-wrap: wrap;
@@ -1671,6 +1670,7 @@ img {
 @media screen and (min-width: 1200px) {
   .client__list {
     display: flex;
+    justify-content: center;
   }
 }
 
